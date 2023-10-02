@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
+    <title>Оформление заказа</title>
+</head>
+
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+
+                </div>
+            </div>
+
+        </header>
+        <div class="breadcrumbs">
+            <div class="container">
+                <a href="" class="breadcrumbs__item">
+                    <span>Главная</span>
+                </a>
+                <a href="" class="breadcrumbs__item">
+                    <span>Корзина</span>
+                </a>
+                <div class="breadcrumbs__item">
+                    <span>Оформление заказа</span>
+                </div>
+            </div>
+        </div>
+
+        <main class="content">
+
+            <section class="lk section">
+                <div class="container">
+                    <h1 class="text42 bold-text">
+                        Оформление заказа
+                    </h1>
+
+                    <div class="order cart">
+                        <div class="cart__content">
+                            <div class="cart__top">
+                                <a href="" class="line-btn">
+                                    <span>Вернуться в корзину</span>
+                                </a>
+                            </div>
+
+                            <div class="buyer m-form _buyer-form">
+                                <div class="text28 bold-text">
+                                    Покупатель
+                                </div>
+                                <div class="buyer__tabs">
+                                    <div class="m-radio">
+                                        <input value="_type1" checked type="radio" name="buyerType">
+                                        <label><span>Физическое лицо</span></label>
+                                    </div>
+
+                                    <div class="m-radio">
+                                        <input value="_type2" type="radio" name="buyerType">
+                                        <label><span>Юридическое лицо</span></label>
+                                    </div>
+
+                                </div>
+                                <div class="buyer__content">
+                                    <div class="buyer__variant _active _type1">
+                                        <div class="m-form__fields _gap12">
+                                            <fieldset class="fg">
+                                                <input type="text" placeholder="Имя">
+                                            </fieldset>
+                                            <fieldset class="fg">
+                                                <input type="text" placeholder="Фамилия">
+                                            </fieldset>
+                                            <div class="m-form__group">
+                                                <fieldset class="fg">
+                                                    <input type="tel" placeholder="Телефон*">
+                                                </fieldset>
+                                                <div class="m-check">
+                                                    <input type="checkbox">
+                                                    <label><span>Прошу мне не звонить, предпочитаю связь по электронной почте</span></label>
+                                                </div>
+
+                                            </div>
+                                            <fieldset class="fg">
+                                                <input type="email" placeholder="E-mail*">
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="buyer__variant _type2">
+                                        <div class="m-form__fields _gap12">
+                                            <fieldset class="fg">
+                                                <input type="text" placeholder="Имя">
+                                            </fieldset>
+                                            <fieldset class="fg">
+                                                <input type="text" placeholder="Фамилия">
+                                            </fieldset>
+                                            <fieldset class="fg">
+                                                <input type="text" placeholder="Наименование организации*">
+                                            </fieldset>
+                                            <fieldset class="fg">
+                                                <input type="email" placeholder="E-mail*">
+                                            </fieldset>
+                                            <fieldset class="fg">
+                                                <input type="text" placeholder="ИНН*">
+                                            </fieldset>
+                                            <fieldset class="fg">
+                                                <input type="text" placeholder="КПП*">
+                                            </fieldset>
+                                            <fieldset class="fg">
+                                                <input type="text" placeholder="ОГРН">
+                                            </fieldset>
+                                            <fieldset class="fg">
+                                                <input type="text" placeholder="Юридический адрес">
+                                            </fieldset>
+                                            <div class="m-form__group">
+                                                <fieldset class="fg">
+                                                    <input type="tel" placeholder="Телефон*">
+                                                </fieldset>
+                                                <div class="m-check">
+                                                    <input type="checkbox">
+                                                    <label><span>Прошу мне не звонить, предпочитаю связь по электронной почте</span></label>
+                                                </div>
+
+                                            </div>
+                                            <div class="m-form__group">
+                                                <fieldset class="fg">
+                                                    <input type="text" placeholder="Фактический адрес">
+                                                </fieldset>
+                                                <div class="m-check">
+                                                    <input type="checkbox">
+                                                    <label><span>Совпадает с юридическим адресом</span></label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="delivery-form m-form">
+                                <div class="text28 bold-text">
+                                    Доставка
+                                </div>
+                                <fieldset class="fg">
+                                    <input type="text" placeholder="Введите ваш населенный пункт">
+                                </fieldset>
+
+                                <div class="m-form__radios _col2">
+                                    <div class="m-radio">
+                                        <input value="" checked type="radio" name="deliveryType">
+                                        <label><span>Самовывоз из магазина в Москве</span></label>
+                                    </div>
+
+                                    <div class="m-radio">
+                                        <input value="" type="radio" name="deliveryType">
+                                        <label><span>Доставка транспортной компанией</span></label>
+                                    </div>
+
+                                    <div class="m-radio">
+                                        <input value="" type="radio" name="deliveryType">
+                                        <label><span>Забрать из пункта выдачи СДЭК</span></label>
+                                    </div>
+
+                                    <div class="m-radio">
+                                        <input value="" type="radio" name="deliveryType">
+                                        <label><span>EMS (3-5 дней)</span></label>
+                                    </div>
+
+                                    <div class="m-radio">
+                                        <input value="" type="radio" name="deliveryType">
+                                        <label><span>Доставка курьером (1-3 дня)</span></label>
+                                    </div>
+
+                                    <div class="m-radio">
+                                        <input value="" type="radio" name="deliveryType">
+                                        <label><span>Обсудить с менеджером</span></label>
+                                    </div>
+
+                                </div>
+
+                                <div class="delivery-place">
+                                    <button class="m-btn m-btn-black-outline">
+                                        <span>Выбрать пункт выдачи</span>
+                                    </button>
+                                    <div class="delivery-place__selected">
+                                        <div class="delivery-place__title text15">
+                                            Выбран пункт: <b>ул. Кастанаевская, д.66</b>
+                                        </div>
+                                        <button class="line-btn">
+                                            <span>Сменить</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="m-form__fields _gap12">
+                                    <fieldset class="fg _full">
+                                        <input type="text" placeholder="Адрес доставки">
+                                    </fieldset>
+                                    <fieldset class="fg _full">
+                                        <textarea placeholder="Комментарий к заказу"></textarea>
+                                    </fieldset>
+                                </div>
+                            </div>
+
+                            <div class="delivery-form m-form">
+                                <div class="text28 bold-text">
+                                    Оплата
+                                </div>
+                                <div class="m-form__radios">
+                                    <div class="m-radio">
+                                        <input value="" checked type="radio" name="payType">
+                                        <label><span>Оплата картой</span></label>
+                                    </div>
+
+                                    <div class="m-radio">
+                                        <input value="" type="radio" name="payType">
+                                        <label><span>Покупка в кредит</span></label>
+                                    </div>
+
+                                    <div class="m-radio">
+                                        <input value="" type="radio" name="payType">
+                                        <label><span>Покупка в рассрочку</span></label>
+                                    </div>
+
+                                    <div class="m-radio">
+                                        <input value="" type="radio" name="payType">
+                                        <label><span>ЮMoney</span></label>
+                                    </div>
+
+                                    <div class="m-radio">
+                                        <input value="" type="radio" name="payType">
+                                        <label><span>Наличными курьеру</span></label>
+                                    </div>
+
+                                    <div class="m-radio">
+                                        <input value="" type="radio" name="payType">
+                                        <label><span>Оплата по счету</span></label>
+                                    </div>
+
+                                    <div class="m-radio">
+                                        <input value="" type="radio" name="payType">
+                                        <label><span>СБП</span></label>
+                                    </div>
+
+                                </div>
+                                <button class="m-btn m-btn-primary">
+                                    <span>Оформить заказ</span>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="cart__sidebar">
+                            <div class="cart-sum">
+                                <div class="text15">
+                                    В корзине 3 товара, вес заказа 17,3 кг
+                                </div>
+                                <div class="cart-sum__items">
+                                    <div class="cart-sum__item">
+                                        <span class="text16">Бас-гитара ARIA TAB-CLASSIC BK</span>
+                                    </div>
+                                    <div class="cart-sum__item">
+                                        <span class="text16">Электроакустический бас J.N YAK-BAS-E</span>
+                                    </div>
+                                    <div class="cart-sum__item">
+                                        <span class="text16">Акустическая бас-гитара MiLena Music ML-AB1 MAH/EQ</span>
+                                    </div>
+                                </div>
+                                <div class="cart-sum__props">
+                                    <div class="cart-prop">
+                                        <div class="text16">Итого:</div>
+                                        <div class="text16 bold-text">300 000 ₽</div>
+                                    </div>
+                                    <div class="cart-prop">
+                                        <div class="text16">Скидка:</div>
+                                        <div class="text16 bold-text red-text">11 000 ₽</div>
+                                    </div>
+                                    <div class="cart-prop">
+                                        <div class="text16">Стоимость доставки:</div>
+                                        <div class="text16 bold-text">500 ₽</div>
+                                    </div>
+                                    <div class="cart-prop">
+                                        <div class="text16">Итого со скидкой:</div>
+                                        <div class="text16 bold-text">289 000 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="m-check">
+                                    <input type="checkbox">
+                                    <label><span>Согласен с <a href=''>Политикой обработки персональных данных</a></span></label>
+                                </div>
+
+                                <button class="m-btn m-btn-primary">
+                                    <span>Оформить заказ</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

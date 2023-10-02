@@ -1,0 +1,2329 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
+    <title>Главная</title>
+</head>
+
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+
+
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            2.Каталог
+        </a>
+        <a href="category.html" style="display: block; margin-bottom: 20px;">
+            3.Раздел
+        </a>
+        <a href="subcategory.html" style="display: block; margin-bottom: 20px;">
+            4.Подраздел
+        </a>
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            5.Карточка товара
+        </a>
+        <a href="catalog-tag.html" style="display: block; margin-bottom: 20px;">
+            6.Тег
+        </a>
+        <a href="catalog-search.html" style="display: block; margin-bottom: 20px;">
+            7.Результаты поиска
+        </a>
+        <a href="brands.html" style="display: block; margin-bottom: 20px;">
+            8.Бренды
+        </a>
+        <a href="catalog-brand.html" style="display: block; margin-bottom: 20px;">
+            9.Бренд
+        </a>
+        <a href="catalog-promos.html" style="display: block; margin-bottom: 20px;">
+            10.Акции
+        </a>
+        <a href="catalog-promo.html" style="display: block; margin-bottom: 20px;">
+            11.Акция
+        </a>
+        <a href="news.html" style="display: block; margin-bottom: 20px;">
+            12.Новости
+        </a>
+        <a href="news-item.html" style="display: block; margin-bottom: 20px;">
+            13.Новость
+        </a>
+        <a href="articles.html" style="display: block; margin-bottom: 20px;">
+            14.Статьи
+        </a>
+        <a href="article.html" style="display: block; margin-bottom: 20px;">
+            15.Статья
+        </a>
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            16.О компании
+        </a>
+        <a href="shops.html" style="display: block; margin-bottom: 20px;">
+            17.Магазины
+        </a>
+        <a href="shop.html" style="display: block; margin-bottom: 20px;">
+            18.Магазин
+        </a>
+        <a href="reviews.html" style="display: block; margin-bottom: 20px;">
+            19.Отзывы
+        </a>
+        <a href="vacancies.html" style="display: block; margin-bottom: 20px;">
+            20.Вакансии
+        </a>
+        <a href="vacancy.html" style="display: block; margin-bottom: 20px;">
+            21.Вакансия
+        </a>
+        <a href="payment.html" style="display: block; margin-bottom: 20px;">
+            22.Оплата
+        </a>
+        <a href="delivery.html" style="display: block; margin-bottom: 20px;">
+            23.Доставка
+        </a>
+        <a href="conf.html" style="display: block; margin-bottom: 20px;">
+            24.Политика конфиденциальности
+        </a>
+        <a href="requisites.html" style="display: block; margin-bottom: 20px;">
+            25.Реквизиты
+        </a>
+        <a href="faq.html" style="display: block; margin-bottom: 20px;">
+            26.Часто задаваемые вопросы
+        </a>
+        <a href="how-order.html" style="display: block; margin-bottom: 20px;">
+            27.Как сделать заказ?
+        </a>
+        <a href="juridical.html" style="display: block; margin-bottom: 20px;">
+            28.Юридическим лицам
+        </a>
+        <a href="hot-line.html" style="display: block; margin-bottom: 20px;">
+            29.Горячая лининия
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            30.Контакты
+        </a>
+
+
+        <a href="profile.html" style="display: block; margin-bottom: 20px;">
+            31.Личный кабинет
+        </a>
+        <a href="cart.html" style="display: block; margin-bottom: 20px;">
+            32.Корзина
+        </a>
+        <a href="order.html" style="display: block; margin-bottom: 20px;">
+            33.Оформление заказа
+        </a>
+        <a href="order2.html" style="display: block; margin-bottom: 20px;">
+            34.Заказ сформирован
+        </a>
+        <a href="orders.html" style="display: block; margin-bottom: 20px;">
+            35.Заказы
+        </a>
+        <a href="order-item.html" style="display: block; margin-bottom: 20px;">
+            36.Заказ
+        </a>
+        <a href="compare.html" style="display: block; margin-bottom: 20px;">
+            37.Сравнение
+        </a>
+        <a href="favourite.html" style="display: block; margin-bottom: 20px;">
+            38.Избранное
+        </a>
+        <a href="change-password.html" style="display: block; margin-bottom: 20px;">
+            39.Сменить пароль
+        </a>
+        <a href="viewed.html" style="display: block; margin-bottom: 20px;">
+            40.Просмотренные
+        </a>
+
+
+
+
+        <button data-modal="addCommentModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Добавить комментарий
+        </button>
+        <button data-modal="addReviewModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Добавить отзыв
+        </button>
+        <button data-modal="letterToCeoModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Письмо директору
+        </button>
+        <button data-modal="quickOrderModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Быстрый заказ
+        </button>
+        <button data-modal="quickOrderModal2" style="border: 2px solid #000;margin-bottom: 20px;">
+            Купить в 1 клик
+        </button>
+        <button data-modal="passwordModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Запрос пароля
+        </button>
+        <button data-modal="passwordModal2" style="border: 2px solid #000;margin-bottom: 20px;">
+            Запрос пароля 2
+        </button>
+        <button data-modal="passwordModal3" style="border: 2px solid #000;margin-bottom: 20px;">
+            Запрос пароля 3
+        </button>
+        <button data-modal="regModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Регистрация
+        </button>
+        <button data-modal="regModal2" style="border: 2px solid #000;margin-bottom: 20px;">
+            Регистрация 2
+        </button>
+        <button data-modal="regModal3" style="border: 2px solid #000;margin-bottom: 20px;">
+            Регистрация 3
+        </button>
+        <button data-modal="loginModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Вход
+        </button>
+        <button data-modal="productModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Быстрый просмотр
+        </button>
+        <button data-modal="productAddedModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Товар добавлен в корзину
+        </button>
+        <button data-modal="compareModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Сравнение
+        </button>
+        <button data-modal="changeModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Замена товара
+        </button>
+
+    </div>
+
+    <div class="modal" id="addCommentModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="modal__top">
+                <div class="text28 bold-text">
+                    Добавить комментарий
+                </div>
+            </div>
+
+            <form action="" class="modal-form">
+                <div class="modal-form__fields">
+                    <fieldset class="fg">
+                        <input type="text" placeholder="Имя">
+                    </fieldset>
+                    <fieldset class="fg">
+                        <input type="email" placeholder="E-mail">
+                    </fieldset>
+                    <fieldset class="fg">
+                        <textarea placeholder="Комментарий"></textarea>
+                    </fieldset>
+                </div>
+                <div class="m-check">
+                    <input @@checked type="checkbox">
+                    <label><span>Согласен с <a href=''>Политикой обработки персональных данных</a></span></label>
+                </div>
+
+                <button class="modal-form__btn m-btn m-btn-black">
+                    <span>Отправить</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="addReviewModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="modal__top">
+                <div class="text28 bold-text">
+                    Добавить отзыв
+                </div>
+            </div>
+
+            <form action="" class="modal-form">
+                <div class="modal-form__fields">
+                    <fieldset class="fg">
+                        <input type="text" placeholder="Имя">
+                    </fieldset>
+                    <fieldset class="fg">
+                        <input type="tel" placeholder="Номер телефона">
+                    </fieldset>
+                    <fieldset class="fg">
+                        <input type="email" placeholder="E-mail">
+                    </fieldset>
+                    <div class="review-field">
+                        <div class="text16">Оценка:</div>
+                        <div class="review-field__rating">
+                            <div class="rating-block " data-rating="4.3">
+                                <div class="rating">
+                                    <div class="rating__stars">
+                                        <img src="img/rating.svg" alt="" class="rating__img">
+                                        <div class="rating__fill">
+                                            <img src="img/rating-fill.svg" alt="" class="rating__img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rating-block__num text15"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <fieldset class="fg">
+                        <textarea placeholder="Отзыв"></textarea>
+                    </fieldset>
+                </div>
+                <div class="m-check">
+                    <input @@checked type="checkbox">
+                    <label><span>Согласен с <a href=''>Политикой обработки персональных данных</a></span></label>
+                </div>
+
+                <button class="modal-form__btn m-btn m-btn-black">
+                    <span>Отправить</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="letterToCeoModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="modal__top">
+                <div class="text28 bold-text">
+                    Письмо директору
+                </div>
+            </div>
+
+            <form action="" class="modal-form">
+                <div class="modal-form__fields">
+                    <fieldset class="fg">
+                        <input type="text" placeholder="Имя">
+                    </fieldset>
+                    <fieldset class="fg">
+                        <input type="tel" placeholder="Номер телефона">
+                    </fieldset>
+                    <fieldset class="fg">
+                        <input type="email" placeholder="E-mail">
+                    </fieldset>
+                    <fieldset class="fg">
+                        <textarea placeholder="Сообщение"></textarea>
+                    </fieldset>
+                </div>
+                <div class="m-check">
+                    <input @@checked type="checkbox">
+                    <label><span>Согласен с <a href=''>Политикой обработки персональных данных</a></span></label>
+                </div>
+
+                <button class="modal-form__btn m-btn m-btn-black">
+                    <span>Отправить</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="quickOrderModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="modal__top">
+                <div class="text28 bold-text">
+                    Быстрый заказ
+                </div>
+            </div>
+
+            <form action="" class="modal-form">
+                <div class="modal-form__fields">
+                    <fieldset class="fg">
+                        <input type="text" placeholder="Имя">
+                    </fieldset>
+                    <fieldset class="fg">
+                        <input type="email" placeholder="E-mail">
+                    </fieldset>
+                </div>
+                <div class="m-check">
+                    <input @@checked type="checkbox">
+                    <label><span>Согласен с <a href=''>Политикой обработки персональных данных</a></span></label>
+                </div>
+
+                <button class="modal-form__btn m-btn m-btn-black">
+                    <span>Заказать</span>
+                </button>
+                <div class="modal-form__hint">
+                    <div class="text16">Менеджер перезвонит вам в течении 15 минут</div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="modal" id="quickOrderModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="modal__top">
+                <div class="text28 bold-text">
+                    Купить в 1 клик
+                </div>
+            </div>
+
+            <form action="" class="modal-form">
+                <div class="modal-form__fields">
+                    <fieldset class="fg">
+                        <input type="text" placeholder="Имя">
+                    </fieldset>
+                    <fieldset class="fg">
+                        <input type="email" placeholder="E-mail">
+                    </fieldset>
+                </div>
+                <div class="m-check">
+                    <input @@checked type="checkbox">
+                    <label><span>Согласен с <a href=''>Политикой обработки персональных данных</a></span></label>
+                </div>
+
+                <button class="modal-form__btn m-btn m-btn-black">
+                    <span>Заказать</span>
+                </button>
+                <div class="modal-form__hint">
+                    <div class="text16">Менеджер перезвонит вам в течении 15 минут</div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="modal password-modal" id="passwordModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="modal__top">
+                <button class="modal__back">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18.5L9 12.5L15 6.5" stroke="#1F2123" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="text28 bold-text">
+                    Запрос пароля
+                </div>
+            </div>
+
+            <form action="" class="modal-form">
+                <div class="modal-form__fields">
+                    <fieldset class="fg">
+                        <input type="text" placeholder="Логин или е-mail">
+                        <div class="fg__hint text14 gray-text">
+                            Контрольная строка для смены пароля, а также ваши регистрационные данные будут высланы вам на e-mail
+                        </div>
+                    </fieldset>
+                    <fieldset class="fg">
+                        <input type="tel" placeholder="Номер телефона">
+                        <div class="fg__hint text14 gray-text">
+                            На ваш номер телефона будет выслано SMS с кодом для смены пароля
+                        </div>
+                    </fieldset>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-black">
+                    <span>Отправить</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal password-modal" id="passwordModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="modal__top">
+                <button class="modal__back">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18.5L9 12.5L15 6.5" stroke="#1F2123" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="text28 bold-text">
+                    Запрос пароля
+                </div>
+            </div>
+
+
+            <form action="" class="modal-form">
+                <div class="modal-form__fields">
+                    <fieldset class="fg">
+                        <input type="text" placeholder="Логин или е-mail">
+                        <div class="fg__hint text14 gray-text">
+                            Контрольная строка для смены пароля, а также ваши регистрационные данные будут высланы вам на e-mail
+                        </div>
+                    </fieldset>
+                    <fieldset class="fg">
+                        <input type="tel" placeholder="Номер телефона">
+                        <div class="fg__hint text14 gray-text">
+                            На ваш номер телефона будет выслано SMS с кодом для смены пароля
+                        </div>
+                    </fieldset>
+                    <fieldset class="fg">
+                        <input type="text" placeholder="Код подтверждения из SMS">
+                    </fieldset>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-black">
+                    <span>Отправить</span>
+                </button>
+                <div class="modal-form__hint">
+                    <div class="text16">
+                        <span class="gray-text">Вы можете отправить код повторно через</span> 45 сек
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal password-modal" id="passwordModal3">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="modal__top">
+                <div class="text28 bold-text">
+                    Запрос пароля
+                </div>
+            </div>
+
+
+            <form action="" class="modal-form">
+                <div class="modal-form__hint">
+                    <div class="text16">
+                        Контрольная строка, а также ваши регистрационные данные были высланы на email. Пожалуйста, дождитесь письма, так как контрольная строка изменяется при каждом запросе
+                    </div>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-black">
+                    <span>Отправить</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal _buyer-form" id="regModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="modal__top">
+                <button class="modal__back">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18.5L9 12.5L15 6.5" stroke="#1F2123" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="text28 bold-text">
+                    Регистрация
+                </div>
+            </div>
+
+
+            <div class="buyer__tabs">
+                <div class="m-radio">
+                    <input value="_type1" checked type="radio" name="buyerType">
+                    <label><span>Физическое лицо</span></label>
+                </div>
+
+                <div class="m-radio">
+                    <input value="_type2" type="radio" name="buyerType">
+                    <label><span>Юридическое лицо</span></label>
+                </div>
+
+            </div>
+
+            <div class="buyer__variant _active _type1">
+                <form action="" class="modal-form">
+                    <div class="modal-form__fields">
+                        <fieldset class="fg">
+                            <input type="text" placeholder="Имя">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="text" placeholder="Фамилия">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="email" placeholder="E-mail*">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="password" placeholder="Пароль*">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="password" placeholder="Подтверждение пароля*">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="tel" placeholder="Номер телефона">
+                        </fieldset>
+                    </div>
+                    <div class="m-check">
+                        <input @@checked type="checkbox">
+                        <label><span>Согласен с <a href=''>Политикой обработки персональных данных</a></span></label>
+                    </div>
+
+                    <button class="modal-form__btn m-btn m-btn-black">
+                        <span>Зарегистрироватся</span>
+                    </button>
+                    <div class="modal-form__hint">
+                        <div class="text16">
+                            <span class="gray-text">* обязательные поля</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="buyer__variant _type2">
+                <form action="" class="modal-form">
+                    <div class="modal-form__fields">
+                        <fieldset class="fg">
+                            <input type="text" placeholder="Имя">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="text" placeholder="Фамилия">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="text" placeholder="Наименование организации*">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="text" placeholder="ИНН*">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="text" placeholder="КПП*">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="text" placeholder="ОГРН">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="text" placeholder="Юридический адрес">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="email" placeholder="E-mail*">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="password" placeholder="Пароль*">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="password" placeholder="Подтверждение пароля*">
+                        </fieldset>
+                        <fieldset class="fg">
+                            <input type="tel" placeholder="Номер телефона">
+                        </fieldset>
+                    </div>
+                    <div class="m-check">
+                        <input @@checked type="checkbox">
+                        <label><span>Согласен с <a href=''>Политикой обработки персональных данных</a></span></label>
+                    </div>
+
+                    <button class="modal-form__btn m-btn m-btn-black">
+                        <span>Зарегистрироватся</span>
+                    </button>
+                    <div class="modal-form__hint">
+                        <div class="text16">
+                            <span class="gray-text">* обязательные поля</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="regModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="modal__top">
+                <button class="modal__back">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18.5L9 12.5L15 6.5" stroke="#1F2123" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="text28 bold-text">
+                    Регистрация
+                </div>
+            </div>
+
+
+            <form action="" class="modal-form">
+                <div class="modal-form__fields">
+                    <div class="modal-form__alert">
+                        <div class="text16">
+                            На ваш номер было выслано SMS <br>
+                        с кодом подтверждения
+                        </div>
+                    </div>
+
+                    <fieldset class="fg">
+                        <input type="text" placeholder="Код подтверждения из SMS">
+                    </fieldset>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-black">
+                    <span>Отправить</span>
+                </button>
+                <div class="modal-form__hint">
+                    <div class="text16">
+                        <span class="gray-text">Вы можете отправить код повторно через</span> 45 сек
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="regModal3">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="modal__top">
+                <div class="text28 bold-text">
+                    Регистрация
+                </div>
+            </div>
+
+
+            <form action="" class="modal-form">
+                <div class="modal-form__hint">
+                    <div class="text16">
+                        Вы успешно зарегистрированы на сайте, теперь вы можете войти:
+                    </div>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-black">
+                    <span>Войти</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="loginModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="modal__top">
+                <div class="text28 bold-text">
+                    Вход
+                </div>
+            </div>
+
+            <form action="" class="modal-form">
+                <div class="modal-form__fields">
+                    <fieldset class="fg">
+                        <input type="text" placeholder="E-mail или номер телефона">
+                    </fieldset>
+                    <fieldset class="fg">
+                        <input type="password" placeholder="Пароль">
+                    </fieldset>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-black">
+                    <span>Войти</span>
+                </button>
+
+                <div class="socials-login">
+                    <div class="share">
+                        <div class="text15">
+                            Войти через:
+                        </div>
+                        <div class="socials">
+                            <a href="" class="socials__item">
+                                <img src="img/vk.svg" alt="">
+                            </a>
+                            <a href="" class="socials__item">
+                                <img src="img/ya.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="login-buttons">
+                    <button data-modal="regModal" type="button" class="line-btn">
+                        <span>Регистрация</span>
+                    </button>
+                    <button data-modal="passwordModal" type="button" class="line-btn">
+                        <span>Забыли пароль?</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal product-modal" id="productModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="product-modal__grid">
+                <div class="product-modal__col">
+                    <div class="gallery">
+                        <div thumbsSlider="" class="gallery__small swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="gallery__img">
+                                        <img src="img/gallery.webp" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="gallery__img">
+                                        <img src="img/gallery2.webp" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="gallery__img">
+                                        <img src="img/gallery3.webp" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="gallery__img">
+                                        <img src="img/gallery4.webp" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="gallery__img">
+                                        <img src="img/gallery5.webp" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="gallery__img">
+                                        <img src="img/gallery6.webp" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="gallery__img">
+                                        <img src="img/gallery8.webp" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="gallery__img">
+                                        <img src="img/gallery8.webp" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button swiper-button-prev">
+                            <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 14.5L12.5 9.5L17.5 14.5" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="swiper-button swiper-button-next">
+                            <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 9.5L12.5 14.5L17.5 9.5" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="gallery__big swiper mySwiper2">
+                            <div class="swiper-wrapper gallery-group">
+                                <div class="swiper-slide">
+                                    <a href="img/gallery.webp" class="gallery__img" data-fancybox="@@album">
+                                        <img src="img/gallery.webp" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/gallery2.webp" class="gallery__img" data-fancybox="@@album">
+                                        <img src="img/gallery2.webp" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/gallery3.webp" class="gallery__img" data-fancybox="@@album">
+                                        <img src="img/gallery3.webp" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/gallery4.webp" class="gallery__img" data-fancybox="@@album">
+                                        <img src="img/gallery4.webp" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/gallery5.webp" class="gallery__img" data-fancybox="@@album">
+                                        <img src="img/gallery5.webp" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/gallery6.webp" class="gallery__img" data-fancybox="@@album">
+                                        <img src="img/gallery6.webp" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/gallery8.webp" class="gallery__img" data-fancybox="@@album">
+                                        <img src="img/gallery8.webp" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/gallery8.webp" class="gallery__img" data-fancybox="@@album">
+                                        <img src="img/gallery8.webp" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-card__badges">
+                                <div class="m-badge _red">
+                                    <span>-10%</span>
+                                </div>
+                                <div class="m-badge">
+                                    <span>хит</span>
+                                </div>
+                                <div class="m-badge _blue">
+                                    <span>new</span>
+                                </div>
+                            </div>
+                            <div class="gallery__logo">
+                                <img src="img/logo.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product-modal__col">
+                    <div class="catalog-item__nav">
+                        <div class="catalog-item__rating">
+                            <div class="rating-block _disabled" data-rating="4.9">
+                                <div class="rating">
+                                    <div class="rating__stars">
+                                        <img src="img/rating.svg" alt="" class="rating__img">
+                                        <div class="rating__fill">
+                                            <img src="img/rating-fill.svg" alt="" class="rating__img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rating-block__num text15"></div>
+                            </div>
+
+                            <span class="review-card__site-split">/</span>
+                            <a href="" class="line-btn">
+                                <span>4 отзыва</span>
+                            </a>
+                        </div>
+
+                        <div class="catalog-item__action">
+                            <button class="favourite-btn">
+                                <span class="favourite-btn__icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.8382 4.61012C20.3274 4.09912 19.721 3.69376 19.0535 3.4172C18.3861 3.14064 17.6707 2.99829 16.9482 2.99829C16.2257 2.99829 15.5103 3.14064 14.8428 3.4172C14.1754 3.69376 13.5689 4.09912 13.0582 4.61012L11.9982 5.67012L10.9382 4.61012C9.90647 3.57842 8.5072 2.99883 7.04817 2.99883C5.58913 2.99883 4.18986 3.57842 3.15817 4.61012C2.12647 5.64181 1.54688 7.04108 1.54688 8.50012C1.54687 9.95915 2.12647 11.3584 3.15817 12.3901L4.21817 13.4501L11.9982 21.2301L19.7782 13.4501L20.8382 12.3901C21.3492 11.8794 21.7545 11.2729 22.0311 10.6055C22.3076 9.93801 22.45 9.2226 22.45 8.50012C22.45 7.77763 22.3076 7.06222 22.0311 6.39476C21.7545 5.7273 21.3492 5.12087 20.8382 4.61012V4.61012Z" stroke="#1F2123" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                            </button>
+                            <button class="compare-btn">
+                                <span class="compare-btn__icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 20V10" stroke="#1F2123" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M12 20V4" stroke="#1F2123" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M6 20V14" stroke="#1F2123" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                            </button>
+                            <div class="share-block">
+                                <button class="share-block__toggle">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.75 25.3749C1.68328 25.3749 1.61591 25.3672 1.54919 25.3519C1.15434 25.2579 0.875 24.9057 0.875 24.4999C0.875 16.5488 1.88081 9.93595 14 9.63517V3.49989C14 3.15207 14.2058 2.83773 14.5239 2.69839C14.8409 2.55992 15.2125 2.61986 15.4689 2.85742L26.8439 13.3574C27.0233 13.5221 27.125 13.7555 27.125 13.9999C27.125 14.2442 27.0233 14.4776 26.8439 14.6426L15.4689 25.1426C15.2134 25.3801 14.8417 25.4416 14.5239 25.3016C14.2058 25.162 14 24.8477 14 24.4999V18.3852C5.68662 18.5842 4.15275 21.6511 2.53269 24.8912C2.38241 25.1929 2.0755 25.3749 1.75 25.3749ZM14.875 16.6249C15.3587 16.6249 15.75 17.0162 15.75 17.4999V22.5012L24.9598 13.9999L15.75 5.49861V10.4999C15.75 10.9835 15.3587 11.3749 14.875 11.3749C5.20888 11.3749 3.12747 15.1133 2.71819 21.0845C4.53053 18.6501 7.6195 16.6249 14.875 16.6249Z" fill="#1F2123" />
+                                    </svg>
+                                </button>
+                                <div class="share-block__dropdown">
+                                    <div class="share-block__items">
+                                        <button data-copy="Copy Text" class="share-block__item">
+                                            <img src="img/copy.svg" alt="">
+                                            <span>Скопировать ссылку</span>
+                                        </button>
+                                        <a href="" class="share-block__item">
+                                            <img src="img/vk.svg" alt="">
+                                            <span>ВКонтакте</span>
+                                        </a>
+                                        <a href="" class="share-block__item">
+                                            <img src="img/ok.svg" alt="">
+                                            <span>Однокласники</span>
+                                        </a>
+                                        <a href="" class="share-block__item">
+                                            <img src="img/tg.svg" alt="">
+                                            <span>Telegram</span>
+                                        </a>
+                                        <a href="" class="share-block__item">
+                                            <img src="img/twitter.svg" alt="">
+                                            <span>Twitter</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-info">
+                        <div class="catalog-info__top">
+                            <div class="text14">
+                                <b>арт:</b> 296077
+                            </div>
+
+                            <div class="text14 green-text2">
+                                в наличии
+                            </div>
+                        </div>
+                        <div class="catalog-info__text-wrap">
+
+                            <div class="text28 bold-text">
+                                FENDER CD-60 Black
+                            </div>
+
+                            <div class="catalog-info__text text15">
+                                В интернет-магазине Pretman-guitars солидный выбор продукции мировых лидеров индустрии, таких как Gibson, Ibanez, Fender, Yamaha, Marshall, VOX, Line 6, Jackson, Ovation, Takamine, Digitech, Mesa Boogie, Peavey, Seymour.
+                            </div>
+                        </div>
+                        <div class="catalog-info__colors">
+                            <div class="color-check">
+                                <input checked type="radio" name="color">
+                                <label>
+                                    <span class="color-check__bg _white" style="background: #FFF;"></span>
+                                </label>
+                            </div>
+                            <div class="color-check">
+                                <input type="radio" name="color">
+                                <label>
+                                    <span class="color-check__bg" style="background: #EBAF77;"></span>
+                                </label>
+                            </div>
+                            <div class="color-check">
+                                <input type="radio" name="color">
+                                <label>
+                                    <span class="color-check__bg" style="background: #B5B5B5;"></span>
+                                </label>
+                            </div>
+                            <div class="color-check">
+                                <input type="radio" name="color">
+                                <label>
+                                    <span class="color-check__bg" style="background: #AA46E7;"></span>
+                                </label>
+                            </div>
+                            <div class="color-check">
+                                <input type="radio" name="color">
+                                <label>
+                                    <span class="color-check__bg _black" style="background: #000;"></span>
+                                </label>
+                            </div>
+                            <div class="color-check">
+                                <input type="radio" name="color">
+                                <label>
+                                    <span class="color-check__bg _black" style="background: #000;"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="catalog-info__nums">
+                            <div class="catalog-info__prices">
+                                <div class="catalog-info__price">77 890 ₽</div>
+                                <div class="catalog-info__price2">90 320 ₽</div>
+                            </div>
+                            <div class="product-card__split">
+                                <img src="img/coin.svg" alt="" class="product-card__split-icon">
+                                <div class="text14">
+                                    Рассрочка 4 месяца по 20 000
+                                </div>
+                                <button class="hint-btn">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.00033 2.21501C4.33366 2.21501 1.33366 5.21501 1.33366 8.88167C1.33366 12.5483 4.33366 15.5483 8.00033 15.5483C11.667 15.5483 14.667 12.5483 14.667 8.88167C14.667 5.21501 11.667 2.21501 8.00033 2.21501Z" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8.00033 9.54818V9.39265C8.00033 8.88895 8.3377 8.62227 8.67506 8.40745C9.00438 8.20005 9.33366 7.93339 9.33366 7.4445C9.33366 6.76302 8.73929 6.21484 8.00033 6.21484C7.26136 6.21484 6.66699 6.76302 6.66699 7.4445" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7.99367 11.8817H8.00567" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-info__nav">
+                            <div class='cartcalc fg'>
+                                <button class='ccalc-minus'>
+                                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.125 8H11.875" stroke="#BABABA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <input type='text' value='1'>
+                                <button class='ccalc-plus'>
+                                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.5 3.625V12.375" stroke="#BABABA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3.125 8H11.875" stroke="#BABABA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="catalog-info__buttons">
+                                <button class="m-btn m-btn-primary">
+                                    <span>Добавить в корзину</span>
+                                </button>
+                                <button class="m-btn m-btn-black-outline">
+                                    <span>Купить в 1 клик</span>
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class="catalog-delivery">
+                            <div class="catalog-delivery__item">
+                                <a href="" class="catalog-delivery__link">
+                                    <span>Доставка завтра</span>
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 12.8816L10 8.88159L6 4.88159" stroke="#1F2123" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal product-added-modal" id="productAddedModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="modal__top">
+                <div class="text28 bold-text">
+                    Товар добавлен в корзину
+                </div>
+            </div>
+
+
+            <div class="product-added-modal__top">
+                <div class="product-added-modal__col">
+                    <div class="cart-table__rows">
+                        <div class="cart-item cart-table__grid">
+                            <div class="cart-item__info">
+                                <div class="cart-item__img">
+                                    <img src="img/cart.jpg" alt="">
+                                </div>
+                                <div class="cart-item__content">
+                                    <div class="text16 bold-text">
+                                        <a href="">Бас-гитара ARIA TAB-CLASSIC BK</a>
+                                    </div>
+
+                                    <div class="cart-color">
+                                        <div class="cart-color__title text14">
+                                            Цвет:
+                                            <span class="_color-name"></span>
+                                        </div>
+                                        <div class="cart-color__items">
+                                            <div class="color-item">
+                                                <input data-name="Красный" checked type="radio" name="color">
+                                                <div class="color-item__inner" style="background: #FE3D3D;"></div>
+                                            </div>
+                                            <div class="color-item">
+                                                <input data-name="Синий" type="radio" name="color">
+                                                <div class="color-item__inner" style="background: #419FD9;"></div>
+                                            </div>
+                                            <div class="color-item">
+                                                <input data-name="Жёлтый" type="radio" name="color">
+                                                <div class="color-item__inner" style="background: #F4B318;"></div>
+                                            </div>
+                                            <div class="color-item">
+                                                <input data-name="Зелёный" type="radio" name="color">
+                                                <div class="color-item__inner" style="background: #82BE5A;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text14 gray-text">
+                                        <b>арт:</b> 00-07057119
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="product-added-modal__col">
+                    <button class="m-btn m-btn-black">
+                        <span>Перейти в корзину</span>
+                    </button>
+                    <button class="m-btn m-btn-black-outline">
+                        <span>Продолжить покупки</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="collection cart-collection">
+                <h1 class="text24 bold-text">
+                    С этим товаром покупают
+                </h1>
+
+                <div class="collection__content">
+                    <div class="collection-slider slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-card__top">
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product.webp" alt="">
+                                            </a>
+
+                                            <div class="product-card__badges">
+
+                                                <div class="m-badge _red">
+                                                    <span>-10%</span>
+                                                </div>
+
+
+                                                <div class="m-badge">
+                                                    <span>хит</span>
+                                                </div>
+
+
+                                                <div class="m-badge _blue">
+                                                    <span>new</span>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="product-card__action">
+                                                <button class="compare-btn">
+                                                    <span class="compare-btn__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 20V10" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 20V4" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 20V14" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                                                </button>
+                                                <button class="favourite-btn">
+                                                    <span class="favourite-btn__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.8382 4.61012C20.3274 4.09912 19.721 3.69376 19.0535 3.4172C18.3861 3.14064 17.6707 2.99829 16.9482 2.99829C16.2257 2.99829 15.5103 3.14064 14.8428 3.4172C14.1754 3.69376 13.5689 4.09912 13.0582 4.61012L11.9982 5.67012L10.9382 4.61012C9.90647 3.57842 8.5072 2.99883 7.04817 2.99883C5.58913 2.99883 4.18986 3.57842 3.15817 4.61012C2.12647 5.64181 1.54688 7.04108 1.54688 8.50012C1.54687 9.95915 2.12647 11.3584 3.15817 12.3901L4.21817 13.4501L11.9982 21.2301L19.7782 13.4501L20.8382 12.3901C21.3492 11.8794 21.7545 11.2729 22.0311 10.6055C22.3076 9.93801 22.45 9.2226 22.45 8.50012C22.45 7.77763 22.3076 7.06222 22.0311 6.39476C21.7545 5.7273 21.3492 5.12087 20.8382 4.61012V4.61012Z" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price1 red-text">
+                                                80 000 ₽
+                                            </div>
+
+                                            <div class="product-card__price2">
+                                                95 000 ₽
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__info">
+                                            <div class="product-card__title">
+                                                <a href="">Электроакустический бас J.N YAK-BAS-E</a>
+                                            </div>
+                                            <div class="product-card__split">
+                                                <div class="text14 gray-text">
+                                                    Частями 4 х 20 000
+                                                </div>
+                                                <button class="hint-btn">
+                                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.00002 1.83335C4.33335 1.83335 1.33335 4.83335 1.33335 8.50002C1.33335 12.1667 4.33335 15.1667 8.00002 15.1667C11.6667 15.1667 14.6667 12.1667 14.6667 8.50002C14.6667 4.83335 11.6667 1.83335 8.00002 1.83335Z" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8.00002 9.16665V9.01112C8.00002 8.50742 8.3374 8.24074 8.67475 8.02592C9.00407 7.81851 9.33335 7.55186 9.33335 7.06297C9.33335 6.38149 8.73899 5.83331 8.00002 5.83331C7.26105 5.83331 6.66669 6.38149 6.66669 7.06297" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M7.99398 11.5H8.00598" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__bottom">
+                                            <div class="review-stat">
+                                                <div class="review-stat__item">
+                                                    <img src="img/star.svg" alt="">
+                                                    <span class="text14">4,9</span>
+                                                </div>
+                                                <div class="review-stat__item">
+                                                    <img src="img/comment.svg" alt="">
+                                                    <span class="text14">43</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="available-status ">
+                                                в наличии
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__nav">
+                                            <button class="m-btn m-btn-primary">
+                                                <span>В корзину</span>
+                                            </button>
+                                            <button class="m-btn m-btn-black-outline">
+                                                <span>Купить в 1 клик</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-card__top">
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product2.webp" alt="">
+                                            </a>
+
+                                            <div class="product-card__badges">
+
+                                                <div class="m-badge _red">
+                                                    <span>-10%</span>
+                                                </div>
+
+
+
+                                                <div class="m-badge _blue">
+                                                    <span>new</span>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="product-card__action">
+                                                <button class="compare-btn">
+                                                    <span class="compare-btn__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 20V10" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 20V4" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 20V14" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                                                </button>
+                                                <button class="favourite-btn">
+                                                    <span class="favourite-btn__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.8382 4.61012C20.3274 4.09912 19.721 3.69376 19.0535 3.4172C18.3861 3.14064 17.6707 2.99829 16.9482 2.99829C16.2257 2.99829 15.5103 3.14064 14.8428 3.4172C14.1754 3.69376 13.5689 4.09912 13.0582 4.61012L11.9982 5.67012L10.9382 4.61012C9.90647 3.57842 8.5072 2.99883 7.04817 2.99883C5.58913 2.99883 4.18986 3.57842 3.15817 4.61012C2.12647 5.64181 1.54688 7.04108 1.54688 8.50012C1.54687 9.95915 2.12647 11.3584 3.15817 12.3901L4.21817 13.4501L11.9982 21.2301L19.7782 13.4501L20.8382 12.3901C21.3492 11.8794 21.7545 11.2729 22.0311 10.6055C22.3076 9.93801 22.45 9.2226 22.45 8.50012C22.45 7.77763 22.3076 7.06222 22.0311 6.39476C21.7545 5.7273 21.3492 5.12087 20.8382 4.61012V4.61012Z" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price1 ">
+                                                100 000 ₽
+                                            </div>
+
+                                        </div>
+
+                                        <div class="product-card__info">
+                                            <div class="product-card__title">
+                                                <a href="">Акустическая бас-гитара MiLena Music ML-AB1 MAH/EQ</a>
+                                            </div>
+                                            <div class="product-card__split">
+                                                <div class="text14 gray-text">
+                                                    Частями 4 х 20 000
+                                                </div>
+                                                <button class="hint-btn">
+                                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.00002 1.83335C4.33335 1.83335 1.33335 4.83335 1.33335 8.50002C1.33335 12.1667 4.33335 15.1667 8.00002 15.1667C11.6667 15.1667 14.6667 12.1667 14.6667 8.50002C14.6667 4.83335 11.6667 1.83335 8.00002 1.83335Z" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8.00002 9.16665V9.01112C8.00002 8.50742 8.3374 8.24074 8.67475 8.02592C9.00407 7.81851 9.33335 7.55186 9.33335 7.06297C9.33335 6.38149 8.73899 5.83331 8.00002 5.83331C7.26105 5.83331 6.66669 6.38149 6.66669 7.06297" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M7.99398 11.5H8.00598" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__bottom">
+                                            <div class="review-stat">
+                                                <div class="review-stat__item">
+                                                    <img src="img/star.svg" alt="">
+                                                    <span class="text14">4,9</span>
+                                                </div>
+                                                <div class="review-stat__item">
+                                                    <img src="img/comment.svg" alt="">
+                                                    <span class="text14">43</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="available-status _blue">
+                                                под заказ
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__nav">
+                                            <button class="m-btn m-btn-primary">
+                                                <span>В корзину</span>
+                                            </button>
+                                            <button class="m-btn m-btn-black-outline">
+                                                <span>Купить в 1 клик</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-card__top">
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product3.webp" alt="">
+                                            </a>
+
+                                            <div class="product-card__badges">
+
+                                                <div class="m-badge _red">
+                                                    <span>-10%</span>
+                                                </div>
+
+
+
+                                                <div class="m-badge _blue">
+                                                    <span>new</span>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="product-card__action">
+                                                <button class="compare-btn">
+                                                    <span class="compare-btn__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 20V10" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 20V4" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 20V14" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                                                </button>
+                                                <button class="favourite-btn">
+                                                    <span class="favourite-btn__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.8382 4.61012C20.3274 4.09912 19.721 3.69376 19.0535 3.4172C18.3861 3.14064 17.6707 2.99829 16.9482 2.99829C16.2257 2.99829 15.5103 3.14064 14.8428 3.4172C14.1754 3.69376 13.5689 4.09912 13.0582 4.61012L11.9982 5.67012L10.9382 4.61012C9.90647 3.57842 8.5072 2.99883 7.04817 2.99883C5.58913 2.99883 4.18986 3.57842 3.15817 4.61012C2.12647 5.64181 1.54688 7.04108 1.54688 8.50012C1.54687 9.95915 2.12647 11.3584 3.15817 12.3901L4.21817 13.4501L11.9982 21.2301L19.7782 13.4501L20.8382 12.3901C21.3492 11.8794 21.7545 11.2729 22.0311 10.6055C22.3076 9.93801 22.45 9.2226 22.45 8.50012C22.45 7.77763 22.3076 7.06222 22.0311 6.39476C21.7545 5.7273 21.3492 5.12087 20.8382 4.61012V4.61012Z" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price1 red-text">
+                                                75 000 ₽
+                                            </div>
+
+                                            <div class="product-card__price2">
+                                                95 000 ₽
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__info">
+                                            <div class="product-card__title">
+                                                <a href="">Электроакустический бас ARIA FEB-F2M STBR</a>
+                                            </div>
+                                            <div class="product-card__split">
+                                                <div class="text14 gray-text">
+                                                    Частями 4 х 20 000
+                                                </div>
+                                                <button class="hint-btn">
+                                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.00002 1.83335C4.33335 1.83335 1.33335 4.83335 1.33335 8.50002C1.33335 12.1667 4.33335 15.1667 8.00002 15.1667C11.6667 15.1667 14.6667 12.1667 14.6667 8.50002C14.6667 4.83335 11.6667 1.83335 8.00002 1.83335Z" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8.00002 9.16665V9.01112C8.00002 8.50742 8.3374 8.24074 8.67475 8.02592C9.00407 7.81851 9.33335 7.55186 9.33335 7.06297C9.33335 6.38149 8.73899 5.83331 8.00002 5.83331C7.26105 5.83331 6.66669 6.38149 6.66669 7.06297" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M7.99398 11.5H8.00598" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__bottom">
+                                            <div class="review-stat">
+                                                <div class="review-stat__item">
+                                                    <img src="img/star.svg" alt="">
+                                                    <span class="text14">4,9</span>
+                                                </div>
+                                                <div class="review-stat__item">
+                                                    <img src="img/comment.svg" alt="">
+                                                    <span class="text14">43</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="available-status _purple">
+                                                сегодня
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__nav">
+                                            <button class="m-btn m-btn-primary">
+                                                <span>В корзину</span>
+                                            </button>
+                                            <button class="m-btn m-btn-black-outline">
+                                                <span>Купить в 1 клик</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-card__top">
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product4.webp" alt="">
+                                            </a>
+
+                                            <div class="product-card__badges">
+
+                                                <div class="m-badge _red">
+                                                    <span>-10%</span>
+                                                </div>
+
+
+
+                                                <div class="m-badge _blue">
+                                                    <span>new</span>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="product-card__action">
+                                                <button class="compare-btn">
+                                                    <span class="compare-btn__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 20V10" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 20V4" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 20V14" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                                                </button>
+                                                <button class="favourite-btn">
+                                                    <span class="favourite-btn__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.8382 4.61012C20.3274 4.09912 19.721 3.69376 19.0535 3.4172C18.3861 3.14064 17.6707 2.99829 16.9482 2.99829C16.2257 2.99829 15.5103 3.14064 14.8428 3.4172C14.1754 3.69376 13.5689 4.09912 13.0582 4.61012L11.9982 5.67012L10.9382 4.61012C9.90647 3.57842 8.5072 2.99883 7.04817 2.99883C5.58913 2.99883 4.18986 3.57842 3.15817 4.61012C2.12647 5.64181 1.54688 7.04108 1.54688 8.50012C1.54687 9.95915 2.12647 11.3584 3.15817 12.3901L4.21817 13.4501L11.9982 21.2301L19.7782 13.4501L20.8382 12.3901C21.3492 11.8794 21.7545 11.2729 22.0311 10.6055C22.3076 9.93801 22.45 9.2226 22.45 8.50012C22.45 7.77763 22.3076 7.06222 22.0311 6.39476C21.7545 5.7273 21.3492 5.12087 20.8382 4.61012V4.61012Z" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price1 ">
+                                                80 000 ₽
+                                            </div>
+
+                                        </div>
+
+                                        <div class="product-card__info">
+                                            <div class="product-card__title">
+                                                <a href="">Бас-гитара CORT AB850F BK W_BAG</a>
+                                            </div>
+                                            <div class="product-card__split">
+                                                <div class="text14 gray-text">
+                                                    Частями 4 х 20 000
+                                                </div>
+                                                <button class="hint-btn">
+                                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.00002 1.83335C4.33335 1.83335 1.33335 4.83335 1.33335 8.50002C1.33335 12.1667 4.33335 15.1667 8.00002 15.1667C11.6667 15.1667 14.6667 12.1667 14.6667 8.50002C14.6667 4.83335 11.6667 1.83335 8.00002 1.83335Z" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8.00002 9.16665V9.01112C8.00002 8.50742 8.3374 8.24074 8.67475 8.02592C9.00407 7.81851 9.33335 7.55186 9.33335 7.06297C9.33335 6.38149 8.73899 5.83331 8.00002 5.83331C7.26105 5.83331 6.66669 6.38149 6.66669 7.06297" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M7.99398 11.5H8.00598" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__bottom">
+                                            <div class="review-stat">
+                                                <div class="review-stat__item">
+                                                    <img src="img/star.svg" alt="">
+                                                    <span class="text14">4,9</span>
+                                                </div>
+                                                <div class="review-stat__item">
+                                                    <img src="img/comment.svg" alt="">
+                                                    <span class="text14">43</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="available-status ">
+                                                в наличии
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__nav">
+                                            <button class="m-btn m-btn-primary">
+                                                <span>В корзину</span>
+                                            </button>
+                                            <button class="m-btn m-btn-black-outline">
+                                                <span>Купить в 1 клик</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-card__top">
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product4.webp" alt="">
+                                            </a>
+
+                                            <div class="product-card__badges">
+
+                                                <div class="m-badge _red">
+                                                    <span>-10%</span>
+                                                </div>
+
+
+
+                                                <div class="m-badge _blue">
+                                                    <span>new</span>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="product-card__action">
+                                                <button class="compare-btn">
+                                                    <span class="compare-btn__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 20V10" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 20V4" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 20V14" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                                                </button>
+                                                <button class="favourite-btn">
+                                                    <span class="favourite-btn__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.8382 4.61012C20.3274 4.09912 19.721 3.69376 19.0535 3.4172C18.3861 3.14064 17.6707 2.99829 16.9482 2.99829C16.2257 2.99829 15.5103 3.14064 14.8428 3.4172C14.1754 3.69376 13.5689 4.09912 13.0582 4.61012L11.9982 5.67012L10.9382 4.61012C9.90647 3.57842 8.5072 2.99883 7.04817 2.99883C5.58913 2.99883 4.18986 3.57842 3.15817 4.61012C2.12647 5.64181 1.54688 7.04108 1.54688 8.50012C1.54687 9.95915 2.12647 11.3584 3.15817 12.3901L4.21817 13.4501L11.9982 21.2301L19.7782 13.4501L20.8382 12.3901C21.3492 11.8794 21.7545 11.2729 22.0311 10.6055C22.3076 9.93801 22.45 9.2226 22.45 8.50012C22.45 7.77763 22.3076 7.06222 22.0311 6.39476C21.7545 5.7273 21.3492 5.12087 20.8382 4.61012V4.61012Z" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price1 ">
+                                                80 000 ₽
+                                            </div>
+
+                                        </div>
+
+                                        <div class="product-card__info">
+                                            <div class="product-card__title">
+                                                <a href="">Бас-гитара CORT AB850F BK W_BAG</a>
+                                            </div>
+                                            <div class="product-card__split">
+                                                <div class="text14 gray-text">
+                                                    Частями 4 х 20 000
+                                                </div>
+                                                <button class="hint-btn">
+                                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.00002 1.83335C4.33335 1.83335 1.33335 4.83335 1.33335 8.50002C1.33335 12.1667 4.33335 15.1667 8.00002 15.1667C11.6667 15.1667 14.6667 12.1667 14.6667 8.50002C14.6667 4.83335 11.6667 1.83335 8.00002 1.83335Z" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8.00002 9.16665V9.01112C8.00002 8.50742 8.3374 8.24074 8.67475 8.02592C9.00407 7.81851 9.33335 7.55186 9.33335 7.06297C9.33335 6.38149 8.73899 5.83331 8.00002 5.83331C7.26105 5.83331 6.66669 6.38149 6.66669 7.06297" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M7.99398 11.5H8.00598" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__bottom">
+                                            <div class="review-stat">
+                                                <div class="review-stat__item">
+                                                    <img src="img/star.svg" alt="">
+                                                    <span class="text14">4,9</span>
+                                                </div>
+                                                <div class="review-stat__item">
+                                                    <img src="img/comment.svg" alt="">
+                                                    <span class="text14">43</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="available-status ">
+                                                в наличии
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__nav">
+                                            <button class="m-btn m-btn-primary">
+                                                <span>В корзину</span>
+                                            </button>
+                                            <button class="m-btn m-btn-black-outline">
+                                                <span>Купить в 1 клик</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-card__top">
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product4.webp" alt="">
+                                            </a>
+
+                                            <div class="product-card__badges">
+
+                                                <div class="m-badge _red">
+                                                    <span>-10%</span>
+                                                </div>
+
+
+
+                                                <div class="m-badge _blue">
+                                                    <span>new</span>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="product-card__action">
+                                                <button class="compare-btn">
+                                                    <span class="compare-btn__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 20V10" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 20V4" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 20V14" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                                                </button>
+                                                <button class="favourite-btn">
+                                                    <span class="favourite-btn__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.8382 4.61012C20.3274 4.09912 19.721 3.69376 19.0535 3.4172C18.3861 3.14064 17.6707 2.99829 16.9482 2.99829C16.2257 2.99829 15.5103 3.14064 14.8428 3.4172C14.1754 3.69376 13.5689 4.09912 13.0582 4.61012L11.9982 5.67012L10.9382 4.61012C9.90647 3.57842 8.5072 2.99883 7.04817 2.99883C5.58913 2.99883 4.18986 3.57842 3.15817 4.61012C2.12647 5.64181 1.54688 7.04108 1.54688 8.50012C1.54687 9.95915 2.12647 11.3584 3.15817 12.3901L4.21817 13.4501L11.9982 21.2301L19.7782 13.4501L20.8382 12.3901C21.3492 11.8794 21.7545 11.2729 22.0311 10.6055C22.3076 9.93801 22.45 9.2226 22.45 8.50012C22.45 7.77763 22.3076 7.06222 22.0311 6.39476C21.7545 5.7273 21.3492 5.12087 20.8382 4.61012V4.61012Z" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price1 ">
+                                                80 000 ₽
+                                            </div>
+
+                                        </div>
+
+                                        <div class="product-card__info">
+                                            <div class="product-card__title">
+                                                <a href="">Бас-гитара CORT AB850F BK W_BAG</a>
+                                            </div>
+                                            <div class="product-card__split">
+                                                <div class="text14 gray-text">
+                                                    Частями 4 х 20 000
+                                                </div>
+                                                <button class="hint-btn">
+                                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.00002 1.83335C4.33335 1.83335 1.33335 4.83335 1.33335 8.50002C1.33335 12.1667 4.33335 15.1667 8.00002 15.1667C11.6667 15.1667 14.6667 12.1667 14.6667 8.50002C14.6667 4.83335 11.6667 1.83335 8.00002 1.83335Z" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8.00002 9.16665V9.01112C8.00002 8.50742 8.3374 8.24074 8.67475 8.02592C9.00407 7.81851 9.33335 7.55186 9.33335 7.06297C9.33335 6.38149 8.73899 5.83331 8.00002 5.83331C7.26105 5.83331 6.66669 6.38149 6.66669 7.06297" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M7.99398 11.5H8.00598" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__bottom">
+                                            <div class="review-stat">
+                                                <div class="review-stat__item">
+                                                    <img src="img/star.svg" alt="">
+                                                    <span class="text14">4,9</span>
+                                                </div>
+                                                <div class="review-stat__item">
+                                                    <img src="img/comment.svg" alt="">
+                                                    <span class="text14">43</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="available-status ">
+                                                в наличии
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__nav">
+                                            <button class="m-btn m-btn-primary">
+                                                <span>В корзину</span>
+                                            </button>
+                                            <button class="m-btn m-btn-black-outline">
+                                                <span>Купить в 1 клик</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-card__top">
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product4.webp" alt="">
+                                            </a>
+
+                                            <div class="product-card__badges">
+
+                                                <div class="m-badge _red">
+                                                    <span>-10%</span>
+                                                </div>
+
+
+
+                                                <div class="m-badge _blue">
+                                                    <span>new</span>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="product-card__action">
+                                                <button class="compare-btn">
+                                                    <span class="compare-btn__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 20V10" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 20V4" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 20V14" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                                                </button>
+                                                <button class="favourite-btn">
+                                                    <span class="favourite-btn__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.8382 4.61012C20.3274 4.09912 19.721 3.69376 19.0535 3.4172C18.3861 3.14064 17.6707 2.99829 16.9482 2.99829C16.2257 2.99829 15.5103 3.14064 14.8428 3.4172C14.1754 3.69376 13.5689 4.09912 13.0582 4.61012L11.9982 5.67012L10.9382 4.61012C9.90647 3.57842 8.5072 2.99883 7.04817 2.99883C5.58913 2.99883 4.18986 3.57842 3.15817 4.61012C2.12647 5.64181 1.54688 7.04108 1.54688 8.50012C1.54687 9.95915 2.12647 11.3584 3.15817 12.3901L4.21817 13.4501L11.9982 21.2301L19.7782 13.4501L20.8382 12.3901C21.3492 11.8794 21.7545 11.2729 22.0311 10.6055C22.3076 9.93801 22.45 9.2226 22.45 8.50012C22.45 7.77763 22.3076 7.06222 22.0311 6.39476C21.7545 5.7273 21.3492 5.12087 20.8382 4.61012V4.61012Z" stroke="#C6C6C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price1 ">
+                                                80 000 ₽
+                                            </div>
+
+                                        </div>
+
+                                        <div class="product-card__info">
+                                            <div class="product-card__title">
+                                                <a href="">Бас-гитара CORT AB850F BK W_BAG</a>
+                                            </div>
+                                            <div class="product-card__split">
+                                                <div class="text14 gray-text">
+                                                    Частями 4 х 20 000
+                                                </div>
+                                                <button class="hint-btn">
+                                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.00002 1.83335C4.33335 1.83335 1.33335 4.83335 1.33335 8.50002C1.33335 12.1667 4.33335 15.1667 8.00002 15.1667C11.6667 15.1667 14.6667 12.1667 14.6667 8.50002C14.6667 4.83335 11.6667 1.83335 8.00002 1.83335Z" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8.00002 9.16665V9.01112C8.00002 8.50742 8.3374 8.24074 8.67475 8.02592C9.00407 7.81851 9.33335 7.55186 9.33335 7.06297C9.33335 6.38149 8.73899 5.83331 8.00002 5.83331C7.26105 5.83331 6.66669 6.38149 6.66669 7.06297" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M7.99398 11.5H8.00598" stroke="#D7D7D7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__bottom">
+                                            <div class="review-stat">
+                                                <div class="review-stat__item">
+                                                    <img src="img/star.svg" alt="">
+                                                    <span class="text14">4,9</span>
+                                                </div>
+                                                <div class="review-stat__item">
+                                                    <img src="img/comment.svg" alt="">
+                                                    <span class="text14">43</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="available-status ">
+                                                в наличии
+                                            </div>
+                                        </div>
+
+                                        <div class="product-card__nav">
+                                            <button class="m-btn m-btn-primary">
+                                                <span>В корзину</span>
+                                            </button>
+                                            <button class="m-btn m-btn-black-outline">
+                                                <span>Купить в 1 клик</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-nav">
+                            <div class="swiper-button swiper-button-prev @@class">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.5 15L7.5 10L12.5 5" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="swiper-button swiper-button-next @@class">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M7.5 15L12.5 10L7.5 5" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination _static"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="modal compare-modal" id="compareModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="modal__top">
+                <div class="text28 bold-text">
+                    Сравнение
+                </div>
+            </div>
+
+            <div class="compare-modal__grid">
+                <div class="product-card">
+                    <div class="product-card__top">
+                        <a href="" class="product-card__img">
+                            <img src="img/product.webp" alt="">
+                        </a>
+                        <div class="product-card__action">
+                            <button class="remove-btn">
+                                <span class="remove-btn__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 6L18 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card__prices">
+                        <div class="product-card__price1 red-text">
+                            80 000 ₽
+                        </div>
+
+                        <div class="product-card__price2">
+                            95 000 ₽
+                        </div>
+                    </div>
+
+                    <div class="product-card__info">
+                        <div class="product-card__title">
+                            <a href="">Электроакустический бас J.N YAK-BAS-E</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="product-card">
+                    <div class="product-card__top">
+                        <a href="" class="product-card__img">
+                            <img src="img/product2.webp" alt="">
+                        </a>
+                        <div class="product-card__action">
+                            <button class="remove-btn">
+                                <span class="remove-btn__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 6L18 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card__prices">
+                        <div class="product-card__price1 ">
+                            100 000 ₽
+                        </div>
+
+                    </div>
+
+                    <div class="product-card__info">
+                        <div class="product-card__title">
+                            <a href="">Акустическая бас-гитара MiLena Music ML-AB1 MAH/EQ</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="product-card">
+                    <div class="product-card__top">
+                        <a href="" class="product-card__img">
+                            <img src="img/product3.webp" alt="">
+                        </a>
+                        <div class="product-card__action">
+                            <button class="remove-btn">
+                                <span class="remove-btn__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 6L18 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card__prices">
+                        <div class="product-card__price1 red-text">
+                            75 000 ₽
+                        </div>
+
+                        <div class="product-card__price2">
+                            95 000 ₽
+                        </div>
+                    </div>
+
+                    <div class="product-card__info">
+                        <div class="product-card__title">
+                            <a href="">Электроакустический бас ARIA FEB-F2M STBR</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="compare-modal__bottom">
+                <button class="compare-modal__btn m-btn m-btn-black-outline">
+                    <span>Сравнить</span>
+
+                    <span class="pin">
+                    <span>3</span>
+                    </span>
+                </button>
+                <button class="line-btn">
+                    <span>Удалить все</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal change-modal" id="changeModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#D7D7D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="change-modal__top">
+                <form class="search-field fg">
+                    <input type="text" placeholder="Поиск товара">
+                    <svg class="search-field__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M17.5 17.5L13.875 13.875" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <button class="search-field__btn line-btn">
+                        <span>Найти</span>
+                    </button>
+                </form>
+
+                <div class="category-select">
+                    <div class="category-select__title">
+                        <div class="text14 bold-text">Категории:</div>
+                    </div>
+                    <div class="m-select">
+                        <select>
+                            <option selected>Все</option>
+                            <option>Все 2</option>
+                            <option>Все 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="change-modal__sort">
+                    <div class="text15">Сортировка:</div>
+                    <div class="m-select">
+                        <select>
+                            <option selected>По размеру скидки</option>
+                            <option>По размеру скидки 2</option>
+                            <option>По размеру скидки 3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="change-modal__grid">
+                <div class="change-card product-card product-card2">
+                    <div class="product-card__top">
+                        <a href="" class="product-card__img">
+                            <img src="img/product9.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="change-card__content">
+                        <div class="product-card__info">
+                            <div class="product-card__title">
+                                <a href="">Elixir Nanoweb Acoustic Phosphor Bronze Light Gauge 12-53</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="review-stat">
+                                <div class="review-stat__item">
+                                    <img src="img/star.svg" alt="">
+                                    <span class="text14">4,9</span>
+                                </div>
+                                <div class="review-stat__item">
+                                    <img src="img/comment.svg" alt="">
+                                    <span class="text14">43</span>
+                                </div>
+                            </div>
+
+                            <div class="available-status ">
+                                в наличии
+                            </div>
+                        </div>
+
+                        <div class="change-card__bottom">
+                            <div class="product-card__prices">
+                                <div class="product-card__price1 red-text">
+                                    80 000 ₽
+                                </div>
+
+                                <div class="product-card__price2">
+                                    95 000 ₽
+                                </div>
+                            </div>
+
+                            <div class="add-btn">
+                                <input type="checkbox">
+                                <div class="add-btn__inner">
+                                    <div class="add-btn__title">
+                                        <span class="_view1">Выбрать</span>
+                                        <span class="_view2">Выбрано</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="change-card product-card product-card2">
+                    <div class="product-card__top">
+                        <a href="" class="product-card__img">
+                            <img src="img/product10.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="change-card__content">
+                        <div class="product-card__info">
+                            <div class="product-card__title">
+                                <a href="">Elixir Nanoweb Acoustic Phosphor Bronze Light Gauge 12-53</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="review-stat">
+                                <div class="review-stat__item">
+                                    <img src="img/star.svg" alt="">
+                                    <span class="text14">4,9</span>
+                                </div>
+                                <div class="review-stat__item">
+                                    <img src="img/comment.svg" alt="">
+                                    <span class="text14">43</span>
+                                </div>
+                            </div>
+
+                            <div class="available-status ">
+                                в наличии
+                            </div>
+                        </div>
+
+                        <div class="change-card__bottom">
+                            <div class="product-card__prices">
+                                <div class="product-card__price1 ">
+                                    80 000 ₽
+                                </div>
+
+                            </div>
+
+                            <div class="add-btn">
+                                <input type="checkbox">
+                                <div class="add-btn__inner">
+                                    <div class="add-btn__title">
+                                        <span class="_view1">Выбрать</span>
+                                        <span class="_view2">Выбрано</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="change-card product-card product-card2">
+                    <div class="product-card__top">
+                        <a href="" class="product-card__img">
+                            <img src="img/product11.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="change-card__content">
+                        <div class="product-card__info">
+                            <div class="product-card__title">
+                                <a href="">Elixir Nanoweb Acoustic Phosphor Bronze Light Gauge 12-53</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="review-stat">
+                                <div class="review-stat__item">
+                                    <img src="img/star.svg" alt="">
+                                    <span class="text14">4,9</span>
+                                </div>
+                                <div class="review-stat__item">
+                                    <img src="img/comment.svg" alt="">
+                                    <span class="text14">43</span>
+                                </div>
+                            </div>
+
+                            <div class="available-status ">
+                                в наличии
+                            </div>
+                        </div>
+
+                        <div class="change-card__bottom">
+                            <div class="product-card__prices">
+                                <div class="product-card__price1 ">
+                                    80 000 ₽
+                                </div>
+
+                            </div>
+
+                            <div class="add-btn">
+                                <input type="checkbox">
+                                <div class="add-btn__inner">
+                                    <div class="add-btn__title">
+                                        <span class="_view1">Выбрать</span>
+                                        <span class="_view2">Выбрано</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="change-card product-card product-card2">
+                    <div class="product-card__top">
+                        <a href="" class="product-card__img">
+                            <img src="img/product12.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="change-card__content">
+                        <div class="product-card__info">
+                            <div class="product-card__title">
+                                <a href="">Elixir Nanoweb Acoustic Phosphor Bronze Light Gauge 12-53</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="review-stat">
+                                <div class="review-stat__item">
+                                    <img src="img/star.svg" alt="">
+                                    <span class="text14">4,9</span>
+                                </div>
+                                <div class="review-stat__item">
+                                    <img src="img/comment.svg" alt="">
+                                    <span class="text14">43</span>
+                                </div>
+                            </div>
+
+                            <div class="available-status ">
+                                в наличии
+                            </div>
+                        </div>
+
+                        <div class="change-card__bottom">
+                            <div class="product-card__prices">
+                                <div class="product-card__price1 red-text">
+                                    80 000 ₽
+                                </div>
+
+                                <div class="product-card__price2">
+                                    95 000 ₽
+                                </div>
+                            </div>
+
+                            <div class="add-btn">
+                                <input type="checkbox">
+                                <div class="add-btn__inner">
+                                    <div class="add-btn__title">
+                                        <span class="_view1">Выбрать</span>
+                                        <span class="_view2">Выбрано</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
